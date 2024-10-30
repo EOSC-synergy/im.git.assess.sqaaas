@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.0.1
+      branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/im:
       branch: master
@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-peach-moose.sh
-        container: qc.acc_chummy-auburn-ibis
+        - /usr/bin/env sh .sqa/script.nippy-platinum-mist.sh
+        container: qc.acc_pasty-wheat-loon
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-fuchsia-akita.sh
-        container: qc.doc_stuffy-orchid-dugong
+        - /usr/bin/env sh .sqa/script.dorky-beige-dog.sh
+        container: qc.doc_pasty-firebrick-buffalo
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-sapphire-dragon.sh
-        container: qc.doc_seedy-ultramarine-butterfly
+        - /usr/bin/env sh .sqa/script.scaly-lavender-fox.sh
+        container: qc.doc_randy-apricot-mule
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-lilac-wasp.sh
-        container: qc.doc_randy-corn-dalmatian
+        - /usr/bin/env sh .sqa/script.homely-corn-cat.sh
+        container: qc.doc_cozy-fuchsia-termite
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-cyan-gharial.sh
-        container: qc.doc_grumpy-brass-chicken
+        - /usr/bin/env sh .sqa/script.skimpy-indigo-wildebeest.sh
+        container: qc.doc_snoopy-cobalt-cat
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-rose-chin.sh
-        container: qc.lic_hilly-amethyst-badger
+        - /usr/bin/env sh .sqa/script.gamy-grey-penguin.sh
+        container: qc.lic_stealthy-tan-barb
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-bistre-coati.sh
-        container: qc.met_shaky-azure-rottweiler
+        - /usr/bin/env sh .sqa/script.cranky-copper-ragdoll.sh
+        container: qc.met_smelly-rose-lionfish
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-magenta-impala.sh
-        container: qc.sec_sleepy-red-fox
+        - /usr/bin/env sh .sqa/script.snippy-myrtle-salamander.sh
+        container: qc.sec_lanky-malachite-penguin
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-crimson-eel.sh
-        container: qc.sty_whiny-orchid-chimpanzee
+        - /usr/bin/env sh .sqa/script.ugly-eggplant-moose.sh
+        container: qc.sty_sunny-auburn-mau
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-tomato-bonobo.sh
-        container: qc.sty_greasy-bronze-centipede
+        - /usr/bin/env sh .sqa/script.squirrely-harlequin-centipede.sh
+        container: qc.sty_wimpy-bistre-stoat
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-taupe-peccary.sh
-        container: qc.sty_zippy-cinnabar-malamute
+        - /usr/bin/env sh .sqa/script.skanky-coral-beagle.sh
+        container: qc.sty_whiny-black-dollar
   QC.Uni:
     repos:
       github.com/grycap/im pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-myrtle-seal.sh
-        container: qc.uni_hazy-ivory-cuscus
+        - /usr/bin/env sh .sqa/script.thirsty-razzmatazz-falcon.sh
+        container: qc.uni_wimpy-cinnamon-toad
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-peach-wolfhound.sh
-        container: qc.ver_fuzzy-wisteria-bordeaux
+        - /usr/bin/env sh .sqa/script.stealthy-teal-zonkey.sh
+        container: qc.ver_lanky-tomato-mastiff
 timeout: 5400
